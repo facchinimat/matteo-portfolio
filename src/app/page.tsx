@@ -42,7 +42,7 @@ export default function Home() {
         {/* RIGHT: Image */}
         <div className="relative w-48 h-48 md:w-64 md:h-64">
           <Image
-            src="/me.jpg"
+            src="/sbu.jpg"
             alt="Photo of Matteo"
             fill
             className="object-cover rounded-2xl"
