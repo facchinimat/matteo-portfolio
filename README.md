@@ -5,7 +5,7 @@ TypeScript, and Tailwind CSS.
 
 ## Live Site
 
-[[[View Portfolio](https://matteo-portfolio-sage.vercel.app/)]]
+[View Portfolio(https://matteo-portfolio-sage.vercel.app/)]
 
 ## Tech Stack
 
