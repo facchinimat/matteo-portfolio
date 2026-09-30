@@ -385,7 +385,7 @@ export default function Home() {
               </Link>
 
               <a
-                href="https://docs.google.com/document/d/1Yy_HzBAVffGw26fzhY1JvFpJVEUirGs64H4yz9gLz8g/edit?usp=sharing"
+                href="/Matteo_Facchini_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-lg border border-zinc-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-zinc-900"
