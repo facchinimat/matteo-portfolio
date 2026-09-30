@@ -59,7 +59,7 @@ export default function Home() {
             <div className="mt-9 flex flex-wrap gap-3">
               <Link
                 href="/projects"
-                className="rounded-lg bg-zinc-950 px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
+                className="rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-blue-700 dark:bg-blue-500 dark:text-white dark:hover:bg-blue-400"
               >
                 Explore my work
               </Link>
