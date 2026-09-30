@@ -17,7 +17,7 @@ export default function OpenGraphImage() {
           height: "100%",
           padding: "72px",
           background:
-            "linear-gradient(135deg, #09090b 0%, #18181b 72%, #172554 100%)",
+            "linear-gradient(135deg, #09090b 0%, #18181b 72%, #330000 100%)",
           color: "#fafafa",
           fontFamily: "Arial, sans-serif",
         }}
@@ -28,13 +28,13 @@ export default function OpenGraphImage() {
             flexDirection: "column",
             justifyContent: "center",
             width: "100%",
-            borderLeft: "5px solid #3b82f6",
+            borderLeft: "5px solid #990000",
             paddingLeft: "48px",
           }}
         >
           <div
             style={{
-              color: "#60a5fa",
+              color: "#f87171",
               fontSize: 24,
               fontWeight: 700,
               letterSpacing: "0.12em",

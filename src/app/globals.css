@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+@theme {
+  --color-blue-50: #fff5f5;
+  --color-blue-100: #ffe0e0;
+  --color-blue-200: #ffc2c2;
+  --color-blue-300: #ff9999;
+  --color-blue-400: #f87171;
+  --color-blue-500: #cc0000;
+  --color-blue-600: #990000;
+  --color-blue-700: #7a0000;
+  --color-blue-800: #660000;
+  --color-blue-900: #4d0000;
+  --color-blue-950: #330000;
+}
+
 /* =========================================================
    BASE THEME
 ========================================================= */
@@ -60,7 +74,7 @@ body {
 ========================================================= */
 
 ::selection {
-  background: rgba(59, 130, 246, 0.2);
+  background: rgba(153, 0, 0, 0.2);
   color: inherit;
 }
 
@@ -69,7 +83,7 @@ body {
 ========================================================= */
 
 :focus-visible {
-  outline: 2px solid #3b82f6;
+  outline: 2px solid #990000;
   outline-offset: 3px;
 }
 
