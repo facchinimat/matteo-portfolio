@@ -56,14 +56,9 @@ export const metadata: Metadata = {
 
   category: "technology",
 
-  alternates: {
-    canonical: "/",
-  },
-
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: siteUrl,
     siteName: "Matteo Facchini",
     title: "Matteo Facchini | Backend & Infrastructure Software Engineer",
     description:
@@ -103,7 +98,7 @@ const structuredData = {
     "https://github.com/facchinimat",
     "https://www.linkedin.com/in/matteo-facchini-b14667352/",
   ],
-  alumniOf: {
+  affiliation: {
     "@type": "CollegeOrUniversity",
     name: "Stony Brook University",
   },

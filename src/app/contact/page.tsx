@@ -1,3 +1,12 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description:
+    "Contact Matteo Facchini about Summer 2027 software engineering opportunities, systems research, or projects.",
+  alternates: { canonical: "/contact" },
+};
+
 export default function ContactPage() {
   return (
     <main>

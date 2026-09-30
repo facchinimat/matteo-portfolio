@@ -1,3 +1,12 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description:
+    "Explore ForgeCI, a GitHub webhook and build-state system, and CourseLens AI, a source-grounded question-answering system for course PDFs.",
+  alternates: { canonical: "/projects" },
+};
+
 const forgeTech = [
   "Python",
   "FastAPI",
@@ -29,13 +38,13 @@ export default function ProjectsPage() {
         </p>
 
         <h1 className="mt-4 max-w-3xl text-5xl font-bold tracking-[-0.04em] text-zinc-950 dark:text-white sm:text-6xl">
-          Learn, Learn and Learn.
+          Building systems to understand how they work.
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-600 dark:text-zinc-400">
           My current work is focused on backend engineering, developer
           infrastructure, and AI systems. These are the two projects that best
-          represent what I'm building and learning right now.
+          represent what I&apos;m building and learning right now.
         </p>
 
         {/* QUICK NAVIGATION */}
@@ -123,7 +132,7 @@ export default function ProjectsPage() {
             {/* RIGHT */}
             <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 dark:border-zinc-800 dark:bg-zinc-950">
               <p className="text-xs font-semibold uppercase tracking-[0.15em] text-zinc-500">
-                Current Architecture
+                Implemented Architecture
               </p>
 
               <div className="mt-6 space-y-3">

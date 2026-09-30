@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  description:
+    "Matteo Facchini is a Stony Brook computer science student seeking Summer 2027 software engineering opportunities in backend, infrastructure, and systems.",
+  alternates: { canonical: "/" },
+};
 
 const techStack = [
   "Python",
@@ -61,8 +68,17 @@ export default function Home() {
                 href="/projects"
                 className="rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-blue-700 dark:bg-blue-500 dark:text-white dark:hover:bg-blue-400"
               >
-                Explore my work
+                Explore My Work
               </Link>
+
+              <a
+                href="/Matteo_Facchini_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-lg border border-zinc-300 bg-white px-5 py-3 text-sm font-semibold text-zinc-800 transition hover:-translate-y-0.5 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-200 dark:hover:bg-zinc-900"
+              >
+                Resume
+              </a>
 
               <a
                 href="https://github.com/facchinimat"
@@ -102,6 +118,7 @@ export default function Home() {
                   alt="Matteo Facchini"
                   fill
                   priority
+                  sizes="(min-width: 1024px) 384px, (min-width: 640px) 384px, calc(100vw - 3rem)"
                   className="object-cover"
                 />
               </div>

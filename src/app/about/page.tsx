@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Meet Matteo Facchini, a Stony Brook computer science student learning through backend projects and GPU systems research.",
+  alternates: { canonical: "/about" },
+};
 
 const coursework = [
   "Analysis of Algorithms",
@@ -14,26 +22,22 @@ const interests = [
   {
     number: "01",
     title: "Backend Engineering",
-    description:
-      "Designing APIs, data models, services, and application logic that remain understandable as systems grow.",
+    description: "Designing APIs, services, and data models that stay understandable as systems grow.",
   },
   {
     number: "02",
     title: "Infrastructure",
-    description:
-      "Learning how developer platforms, CI/CD systems, containers, databases, queues, and distributed workers operate behind the scenes.",
+    description: "Exploring how CI/CD, containers, databases, queues, and workers operate behind the scenes.",
   },
   {
     number: "03",
     title: "Systems & Performance",
-    description:
-      "Understanding how software interacts with compute resources and how architectural decisions affect latency, throughput, and reliability.",
+    description: "Studying how compute resources and design choices affect latency, throughput, and reliability.",
   },
   {
     number: "04",
     title: "AI Systems",
-    description:
-      "Building useful AI applications around retrieval, APIs, data pipelines, and the infrastructure required to make models usable in real products.",
+    description: "Building retrieval, data, and API layers that make AI applications useful.",
   },
 ];
 
@@ -65,31 +69,28 @@ export default function AboutPage() {
             </p>
 
             <p>
-              I like understanding what happens after someone clicks a button:
-              how a request moves through an API, how data is stored, how work
-              gets scheduled, how services communicate, and what happens when
-              something fails.
+              I&apos;m curious about what happens behind the interface: how
+              requests move through APIs, data is stored, work gets scheduled,
+              and systems respond when something fails.
             </p>
 
             <p>
-              That curiosity has pushed me toward projects like{" "}
+              I learn by building. In{" "}
               <span className="font-semibold text-zinc-900 dark:text-white">
                 ForgeCI
               </span>
-              , where I&apos;m exploring CI/CD infrastructure, and{" "}
+              , I&apos;m exploring CI/CD infrastructure; with{" "}
               <span className="font-semibold text-zinc-900 dark:text-white">
                 CourseLens AI
               </span>
-              , where I built a retrieval-augmented generation pipeline around
-              course documents.
+              , I built a retrieval-augmented generation pipeline for course
+              documents.
             </p>
 
             <p>
               I&apos;m also an undergraduate researcher in Stony Brook&apos;s
-              PACE Lab, where I&apos;m studying GPU resource sharing and
-              workload co-location. That experience has made me increasingly
-              interested in systems performance and the infrastructure behind
-              large-scale software.
+              PACE Lab, studying GPU resource sharing and workload co-location
+              to better understand systems performance.
             </p>
           </div>
         </div>
@@ -152,9 +153,8 @@ export default function AboutPage() {
           </h2>
 
           <p className="mt-5 leading-7 text-zinc-600 dark:text-zinc-400">
-            I&apos;m still early in my career, so I&apos;m deliberately
-            building across several connected areas instead of locking myself
-            into one narrow technology.
+            I&apos;m building across these connected areas before narrowing my
+            focus to one technology.
           </p>
         </div>
 
@@ -202,16 +202,10 @@ export default function AboutPage() {
 
             <div>
               <p className="text-xl leading-8 text-zinc-300">
-                At Stony Brook University&apos;s PACE Lab, I&apos;m
-                investigating how multiple GPU workloads behave when they share
-                hardware resources.
-              </p>
-
-              <p className="mt-5 leading-7 text-zinc-400">
-                My work involves NVIDIA MPS and CUDA Green Contexts, benchmarking
-                workload pairs under different resource allocations, and
-                measuring latency and throughput to understand performance
-                isolation and resource partitioning.
+                At Stony Brook University&apos;s PACE Lab, I study GPU workload
+                sharing with NVIDIA MPS and CUDA Green Contexts, benchmarking
+                resource allocations and measuring latency and throughput to
+                understand performance isolation.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-2">
@@ -321,16 +315,9 @@ export default function AboutPage() {
 
             <div className="space-y-6 text-lg leading-8 text-zinc-600 dark:text-zinc-400">
               <p>
-                I learn best by taking a concept and turning it into something
-                real. Instead of only reading about webhooks, databases,
-                retrieval systems, or CI pipelines, I try to build a smaller
-                version myself and understand each layer.
-              </p>
-
-              <p>
-                I&apos;m especially drawn to projects where I can start with a
-                simple working system and gradually add persistence, testing,
-                reliability, concurrency, and infrastructure as I learn more.
+                I turn concepts like webhooks, databases, retrieval, and CI
+                pipelines into working systems, then deepen them with
+                persistence, testing, reliability, and concurrency.
               </p>
             </div>
           </div>
@@ -352,8 +339,7 @@ export default function AboutPage() {
             </h2>
 
             <p className="mt-3 max-w-xl text-zinc-600 dark:text-zinc-400">
-              Explore my backend, infrastructure, and AI projects in more
-              detail.
+              See the systems I&apos;m learning to build.
             </p>
           </div>
 

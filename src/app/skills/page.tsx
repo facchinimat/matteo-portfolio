@@ -1,7 +1,16 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Skills",
+  description:
+    "Technical skills across programming languages, backend engineering, infrastructure, AI systems, and frontend development.",
+  alternates: { canonical: "/skills" },
+};
+
 const skillGroups = [
   {
     title: "Languages",
-    description: "Languages I use across coursework, projects, and systems work.",
+    description: "Used across coursework and software projects.",
     skills: [
       "Python",
       "C",
@@ -14,7 +23,7 @@ const skillGroups = [
   },
   {
     title: "Backend Engineering",
-    description: "Tools I use to build APIs, services, and persistent applications.",
+    description: "APIs, services, and persistent applications.",
     skills: [
       "FastAPI",
       "Pydantic",
@@ -25,8 +34,7 @@ const skillGroups = [
   },
   {
     title: "Infrastructure & Systems",
-    description:
-      "Technologies I use for development environments, testing, CI, and systems-oriented projects.",
+    description: "Development environments, testing, CI, and systems work.",
     skills: [
       "Linux",
       "Docker",
@@ -39,8 +47,7 @@ const skillGroups = [
   },
   {
     title: "AI & Data",
-    description:
-      "Tools I use for retrieval systems, embeddings, LLM applications, and document processing.",
+    description: "Retrieval systems, LLM applications, and document processing.",
     skills: [
       "OpenAI API",
       "ChromaDB",
@@ -53,8 +60,7 @@ const skillGroups = [
   },
   {
     title: "Frontend",
-    description:
-      "Frontend technologies I use when building complete applications and this portfolio.",
+    description: "Used to build complete web applications.",
     skills: [
       "React",
       "Next.js",
@@ -67,15 +73,11 @@ const skillGroups = [
 const currentlyDeepening = [
   {
     title: "Distributed Systems",
-    text: "Learning how queues, workers, concurrency, failure recovery, and distributed execution fit together through ForgeCI.",
+    text: "Exploring queues, workers, concurrency, and execution through ForgeCI.",
   },
   {
     title: "Systems Performance",
-    text: "Exploring latency, throughput, resource sharing, and workload behavior through GPU systems research.",
-  },
-  {
-    title: "Infrastructure Engineering",
-    text: "Building a stronger understanding of CI/CD systems, containers, databases, job execution, and backend reliability.",
+    text: "Studying latency, throughput, and resource sharing in GPU systems research.",
   },
 ];
 
@@ -239,54 +241,20 @@ export default function SkillsPage() {
       </section>
 
       {/* =========================================================
-          CONNECTION TO PROJECTS
+          PROJECT APPLICATION
       ========================================================= */}
       <section className="border-t border-zinc-200 bg-zinc-50/60 dark:border-zinc-800 dark:bg-zinc-950/40">
-        <div className="mx-auto max-w-5xl px-6 py-20">
-          <div className="grid gap-10 md:grid-cols-2">
-            {/* FORGECI */}
-            <div>
-              <p className="text-sm font-semibold text-blue-600 dark:text-blue-400">
-                ForgeCI
-              </p>
-
-              <h3 className="mt-2 text-2xl font-bold">
-                Infrastructure in practice
-              </h3>
-
-              <p className="mt-4 leading-7 text-zinc-600 dark:text-zinc-400">
-                FastAPI, PostgreSQL, SQLAlchemy, pytest, GitHub webhooks, and
-                GitHub Actions come together in one backend-focused system.
-              </p>
-            </div>
-
-            {/* COURSELENS */}
-            <div>
-              <p className="text-sm font-semibold text-blue-600 dark:text-blue-400">
-                CourseLens AI
-              </p>
-
-              <h3 className="mt-2 text-2xl font-bold">
-                AI systems in practice
-              </h3>
-
-              <p className="mt-4 leading-7 text-zinc-600 dark:text-zinc-400">
-                FastAPI, OpenAI, ChromaDB, embeddings, vector search, document
-                processing, and source-grounded generation form the RAG
-                pipeline.
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-10">
+        <div className="mx-auto flex max-w-5xl flex-col gap-5 px-6 py-12 sm:flex-row sm:items-center sm:justify-between">
+          <p className="leading-7 text-zinc-600 dark:text-zinc-400">
+            See how I apply these skills in ForgeCI and CourseLens AI.
+          </p>
             <a
               href="/projects"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-zinc-900 transition hover:text-blue-600 dark:text-white dark:hover:text-blue-400"
+              className="inline-flex shrink-0 items-center gap-2 text-sm font-semibold text-zinc-900 transition hover:text-blue-600 dark:text-white dark:hover:text-blue-400"
             >
-              See the projects behind these skills
+              View Projects
               <span>→</span>
             </a>
-          </div>
         </div>
       </section>
     </main>

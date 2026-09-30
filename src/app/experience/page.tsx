@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Experience",
+  description:
+    "Matteo Facchini's PACE Lab GPU resource-sharing research and professional experience at Stellina Restaurant.",
+  alternates: { canonical: "/experience" },
+};
 
 const researchTopics = [
   "GPU Systems",
@@ -243,39 +251,6 @@ export default function ExperiencePage() {
                   {skill}
                 </span>
               ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* =========================================================
-          INVOLVEMENT
-      ========================================================= */}
-      <section className="border-t border-zinc-200 bg-zinc-50/60 dark:border-zinc-800 dark:bg-zinc-950/40">
-        <div className="mx-auto max-w-5xl px-6 py-20">
-          <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr]">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-blue-600 dark:text-blue-400">
-                Campus Involvement
-              </p>
-
-              <h2 className="mt-4 text-3xl font-bold tracking-tight">
-                Beyond the classroom
-              </h2>
-            </div>
-
-            <div className="border-l-2 border-zinc-200 pl-6 dark:border-zinc-800">
-              <h3 className="text-xl font-bold text-zinc-950 dark:text-white">
-                AI Community Club
-              </h3>
-
-              <p className="mt-1 text-zinc-500">
-                Stony Brook University
-              </p>
-
-              <p className="mt-2 text-sm text-zinc-500">
-                Member · April 2025 — Present
-              </p>
             </div>
           </div>
         </div>

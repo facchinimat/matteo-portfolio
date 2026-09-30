@@ -5,10 +5,10 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const navLinks = [
-  { name: "About", href: "/about" },
   { name: "Projects", href: "/projects" },
   { name: "Experience", href: "/experience" },
   { name: "Skills", href: "/skills" },
+  { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -38,9 +38,7 @@ export default function Navbar() {
               Matteo Facchini
             </p>
 
-            <p className="mt-1 text-xs text-zinc-500">
-              Software Engineer
-            </p>
+            <p className="mt-1 text-xs text-zinc-500">CS @ Stony Brook</p>
           </div>
         </Link>
 
@@ -55,6 +53,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
+                aria-current={active ? "page" : undefined}
                 className={`rounded-lg px-3 py-2 text-sm font-medium transition ${active
                     ? "bg-zinc-100 text-zinc-950 dark:bg-zinc-900 dark:text-white"
                     : "text-zinc-600 hover:bg-zinc-100 hover:text-zinc-950 dark:text-zinc-400 dark:hover:bg-zinc-900 dark:hover:text-white"
@@ -140,6 +139,7 @@ export default function Navbar() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setMenuOpen(false)}
+                    aria-current={active ? "page" : undefined}
                     className={`rounded-lg px-4 py-3 text-base font-medium transition ${active
                         ? "bg-zinc-100 text-zinc-950 dark:bg-zinc-900 dark:text-white"
                         : "text-zinc-600 hover:bg-zinc-100 hover:text-zinc-950 dark:text-zinc-400 dark:hover:bg-zinc-900 dark:hover:text-white"
